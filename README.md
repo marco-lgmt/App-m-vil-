@@ -17,6 +17,29 @@ Aplicación móvil para integrar gráficos de Quotex con señales de trading aut
 - Dart 2.17.0 o superior
 - Conexión a Internet para gráficos en tiempo real
 
+## Instrucciones para Compilar
+
+### Usando Codemagic
+
+1. Clona este repositorio en tu cuenta de GitHub
+2. Crea una cuenta en [Codemagic](https://codemagic.io/)
+3. Agrega tu repositorio de GitHub a Codemagic
+4. Usa la configuración del archivo `codemagic.yaml` incluido 
+5. Inicia la compilación
+
+### Compilación Local
+
+```bash
+# Instalar dependencias
+flutter pub get
+
+# Compilar versión de depuración
+flutter build apk --debug
+
+# Compilar versión de lanzamiento
+flutter build apk --release
+```
+
 ## Credenciales necesarias
 
 Para la funcionalidad completa, necesitarás:

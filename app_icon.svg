@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo redondeado con degradado -->
+  <defs>
+    <linearGradient id="bg_gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a237e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d47a1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo principal -->
+  <rect
+     style="fill:url(#bg_gradient);stroke:none;"
+     width="512"
+     height="512"
+     x="0"
+     y="0"
+     rx="80"
+     ry="80" />
+     
+  <!-- Efecto de brillo -->
+  <circle cx="180" cy="130" r="200" fill-opacity="0.1" fill="#ffffff" />
+  
+  <!-- Gráfico de velas (candlestick) -->
+  <g transform="translate(60, 80) scale(0.8)">
+    <!-- Velas alcistas (verde) -->
+    <rect x="80" y="110" width="30" height="80" fill="#4caf50" rx="2" ry="2" />
+    <line x1="95" y1="70" x2="95" y2="110" stroke="#4caf50" stroke-width="6" stroke-linecap="round" />
+    <line x1="95" y1="190" x2="95" y2="230" stroke="#4caf50" stroke-width="6" stroke-linecap="round" />
+    
+    <rect x="140" y="150" width="30" height="140" fill="#4caf50" rx="2" ry="2" />
+    <line x1="155" y1="120" x2="155" y2="150" stroke="#4caf50" stroke-width="6" stroke-linecap="round" />
+    <line x1="155" y1="290" x2="155" y2="320" stroke="#4caf50" stroke-width="6" stroke-linecap="round" />
+    
+    <!-- Velas bajistas (rojo) -->
+    <rect x="200" y="180" width="30" height="100" fill="#f44336" rx="2" ry="2" />
+    <line x1="215" y1="150" x2="215" y2="180" stroke="#f44336" stroke-width="6" stroke-linecap="round" />
+    <line x1="215" y1="280" x2="215" y2="310" stroke="#f44336" stroke-width="6" stroke-linecap="round" />
+    
+    <rect x="260" y="90" width="30" height="60" fill="#f44336" rx="2" ry="2" />
+    <line x1="275" y1="70" x2="275" y2="90" stroke="#f44336" stroke-width="6" stroke-linecap="round" />
+    <line x1="275" y1="150" x2="275" y2="180" stroke="#f44336" stroke-width="6" stroke-linecap="round" />
+    
+    <!-- Vela alcista final (verde) -->
+    <rect x="320" y="140" width="30" height="120" fill="#4caf50" rx="2" ry="2" />
+    <line x1="335" y1="110" x2="335" y2="140" stroke="#4caf50" stroke-width="6" stroke-linecap="round" />
+    <line x1="335" y1="260" x2="335" y2="290" stroke="#4caf50" stroke-width="6" stroke-linecap="round" />
+  </g>
+  
+  <!-- Línea de tendencia -->
+  <path
+     d="M 100,340 150,300 200,320 250,260 300,280 350,240 400,220"
+     style="fill:none;stroke:#ffc107;stroke-width:8;stroke-linecap:round;stroke-linejoin:round" />
+     
+  <!-- Señal de compra (flecha hacia arriba) -->
+  <circle cx="350" cy="240" r="18" fill="#03a9f4" />
+  <path d="M 350,226 L 336,246 L 364,246 Z" fill="#ffffff" />
+  
+  <!-- Texto "Q" de Quotex -->
+  <g transform="translate(256, 434) scale(1.4)">
+    <circle cx="0" cy="0" r="30" fill="#ffffff" />
+    <text x="-13" y="10" font-family="Arial" font-weight="bold" font-size="36" fill="#0d47a1">Q</text>
+  </g>
+</svg>
